@@ -100,7 +100,6 @@
                                         $i++;
                                         echo $i.': '.$name.'</br>';
                                     }
-                                    
                                 ?>
                             </div>
                         </div>
@@ -158,7 +157,7 @@
             </div>
 
             <div class="accordion accordion-flush" id="accordionForeachLoop">
-                <h4>Do While Loop</h4>
+                <h4>Foreach Loop</h4>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingDoForeachLoopCode">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -186,11 +185,11 @@
                         aria-labelledby="flush-headingDoForeachLoopResult">
                         <div class="accordion-body">
                             <?php                     
-                                    $fruits = ['apple', 'pear', 'banana', 'strawberry', 'cherry', 'kiwi', 'mango', 'apricot', 'plum', 'durian'];
-                                    foreach($fruits as $value) {
-                                        echo $value.'</br>';
-                                    }
-                                ?>
+                                $fruits = ['apple', 'pear', 'banana', 'strawberry', 'cherry', 'kiwi', 'mango', 'apricot', 'plum', 'durian'];
+                                foreach($fruits as $value) {
+                                    echo $value.'</br>';
+                                }
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -284,21 +283,21 @@
                         aria-labelledby="flush-headingDoFizzBuzzResult">
                         <div class="accordion-body">
                             <?php                     
-                                    function fizzBuzz() {
-                                        for ($i=1; $i<=100; $i++) {
-                                            if ($i % 3 == 0 && $i % 5 == 0) {
-                                                echo 'Full-Stack</br>';
-                                            } elseif ($i % 3 == 0) {
-                                                echo 'Back-End</br>';
-                                            } elseif ($i % 5 == 0) {
-                                                echo 'Front-End</br>';
-                                            } else {
-                                                echo $i.'</br>';
-                                            }
-                                        }                    
-                                    } 
-                                    fizzBuzz();
-                                ?>
+                                function fizzBuzz() {
+                                    for ($i=1; $i<=100; $i++) {
+                                        if ($i % 3 == 0 && $i % 5 == 0) {
+                                            echo 'Full-Stack</br>';
+                                        } elseif ($i % 3 == 0) {
+                                            echo 'Back-End</br>';
+                                        } elseif ($i % 5 == 0) {
+                                            echo 'Front-End</br>';
+                                        } else {
+                                            echo $i.'</br>';
+                                        }
+                                    }                    
+                                } 
+                                fizzBuzz();
+                            ?>
                         </div>
                     </div>
                 </div>
